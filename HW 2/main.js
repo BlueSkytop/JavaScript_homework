@@ -5,7 +5,7 @@ console.log(users);
 
 
     let book_1 = {
-        name: 'History of Ukraine',
+        name: 'Історія України',
         pageCount: 250,
         genre: 'history'
     }
@@ -20,3 +20,20 @@ console.log(users);
         genre: 'fantasy'
     }
 console.log(book_1, book_2, book_3);
+    book_1.author = [
+        name = 'Михайло Грушевськй',
+        age = 40,
+    ];
+console.log(book_1);
+book_2.author = [
+    name = 'Rebecca Yarros ',
+    age = 32,
+];
+console.log(book_2);
+book_3.author = [
+    name = 'Christopher Paolini ',
+    age = 46,
+];
+console.log(book_3);
+
+
