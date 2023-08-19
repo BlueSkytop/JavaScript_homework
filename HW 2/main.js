@@ -122,7 +122,26 @@ switch (plan) {
     case '7':
         console.log('поїхати на природу');
         break;
+
+    default:
+        console.log('помилка, потрібно ввести цифру');
 }
 
+
+let number = +prompt('напиши перше число');
+let number2 = +prompt('напиши друге число');
+if(number > number2){
+    console.log(number);
+}else {
+    console.log('problem')
+}
+if(number2 > number){
+    console.log(number2)
+}else {
+    console.log('problem')
+}
+if(number === number2){
+    console.log('ok')
+}
 
 
