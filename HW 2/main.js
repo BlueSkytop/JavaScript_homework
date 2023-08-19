@@ -36,4 +36,35 @@ book_3.author = [
 ];
 console.log(book_3);
 
+let users_2 = [
+    {name: 'Veronika', username:'nika', password:12345},
+    {name: 'Vasya', username:'124', password:123467},
+    {name: 'Ira', username:'ira25', password:123489},
+    {name: 'Olena', username:'O58', password:1234564},
+    {name: 'Eva', username:'h589', password:12895},
+    {name: 'Yana', username:'Yana21', password:128525},
+    {name: 'Oleg', username:'Oleg64', password:1285965},
+    {name: 'Petro', username:'hdgs', password:151445},
+    {name: 'Mariya', username:'Mar1', password:185215},
+    {name: 'Svitlana', username:'svit22', password:12352852},
+];
+console.log(users_2);
+
+let x = prompt('Вгадай число до 30');
+if(x === '25'){
+    console.log('вірно');
+} else {
+    console.log('невірно');
+}
+
+let a = prompt('Вгадай з першого разу одну з трьох цифр: 0,1,-3');
+if (a === '-3'){
+    console.log('вірно');
+}
+if (a === '0'){
+    console.log('невірно');
+}
+if (a === '1'){
+    console.log('пощастить іншим разом')
+}
 
