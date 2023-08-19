@@ -82,6 +82,47 @@ if (time >=45 && time <= 59){
     console.log('4');
 }
 
+let day = prompt('Напиши число до 31 і дізнася, яка це декада місяця')
+if (day >= 0 && day <= 10){
+    console.log('1');
+}
+if (day >= 11 && day <= 20){
+    console.log('2');
+}
+if (day >= 21 && day <= 31){
+    console.log('3');
+}
+
+let plan = prompt('План на тиждень');
+switch (plan) {
+    case '1':
+        console.log('вигуляти пса, почитати книгу');
+        break;
+
+    case '2':
+        console.log('прослухати ще раз лекцію');
+        break;
+
+    case '3':
+        console.log('зробити домашку');
+        break;
+
+    case '4':
+        console.log('підлити квіти');
+        break;
+
+    case '5':
+        console.log('подивитись фільм англіською');
+        break;
+
+    case '6':
+        console.log('закупитись харчами, поприбирати вдома');
+        break;
+
+    case '7':
+        console.log('поїхати на природу');
+        break;
+}
 
 
 
