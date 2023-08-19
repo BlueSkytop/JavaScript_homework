@@ -68,3 +68,20 @@ if (a === '1'){
     console.log('пощастить іншим разом')
 }
 
+let time = prompt('Напиши число і дізнася яка це четверть години');
+if (time >= 0 && time <= 14){
+    console.log('1');
+}
+if (time >= 15 && time <= 29){
+    console.log('2');
+}
+if (time >= 30 && time <= 44){
+    console.log('3');
+}
+if (time >=45 && time <= 59){
+    console.log('4');
+}
+
+
+
+
