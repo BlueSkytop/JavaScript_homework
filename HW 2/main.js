@@ -132,16 +132,70 @@ let number = +prompt('напиши перше число');
 let number2 = +prompt('напиши друге число');
 if(number > number2){
     console.log(number);
-}else {
-    console.log('problem')
 }
 if(number2 > number){
     console.log(number2)
-}else {
-    console.log('problem')
 }
 if(number === number2){
     console.log('ok')
 }
 
+let start = prompt('write start');
+if(start !== 'start' || start === 'START') {
+    console.log('default');
+}else {
+    console.log('молодець');
+}
 
+
+
+let coursesAndDurationArray = [
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
+let course1 = coursesAndDurationArray[0];
+console.log(course1);
+if(course1 => 5) {
+    console.log('super');
+}else {
+    console.log('short course')
+}
+let course2 = coursesAndDurationArray[1];
+console.log(course2);
+if(course2 => 5){
+    console.log('super');
+}else {
+    console.log('short course')
+}
+let course3 = coursesAndDurationArray[2];
+console.log(course3);
+if(course3 => 5){
+    console.log('super');
+}else {
+    console.log('short course')
+}
+let course4 = coursesAndDurationArray[3];
+console.log(course4);
+if(course4 > 5){
+    console.log('super');
+}else {
+    console.log('short course')
+}
+let course5 = coursesAndDurationArray[4];
+console.log(course5);
+if(course4 => 5){
+    console.log('super');
+}else {
+    console.log('short course')
+}
+let course6 = coursesAndDurationArray[6];
+console.log(course6);
+if(course6 > 5){
+    console.log('super');
+}else {
+    console.log('short course')
+}
