@@ -20,20 +20,20 @@ console.log(users);
         genre: 'fantasy'
     }
 console.log(book_1, book_2, book_3);
-    book_1.author = [
-        name = 'Михайло Грушевськй',
-        age = 40,
-    ];
+    book_1.author = [{
+        name: 'Михайло Грушевськй',
+        age:40,
+    } ];
 console.log(book_1);
-book_2.author = [
-    name = 'Rebecca Yarros ',
-    age = 32,
-];
+book_2.author = [{
+    name:'Rebecca Yarros ',
+    age:32,
+}];
 console.log(book_2);
-book_3.author = [
-    name = 'Christopher Paolini ',
-    age = 46,
-];
+book_3.author = [{
+    name:'Christopher Paolini ',
+    age:46,
+}];
 console.log(book_3);
 
 let users_2 = [
@@ -157,45 +157,10 @@ let coursesAndDurationArray = [
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}
 ];
-let course1 = coursesAndDurationArray[0];
-console.log(course1);
-if(course1 => 5) {
+
+if(coursesAndDurationArray => 5) {
     console.log('super');
 }else {
-    console.log('short course')
+    console.log('short course');
 }
-let course2 = coursesAndDurationArray[1];
-console.log(course2);
-if(course2 => 5){
-    console.log('super');
-}else {
-    console.log('short course')
-}
-let course3 = coursesAndDurationArray[2];
-console.log(course3);
-if(course3 => 5){
-    console.log('super');
-}else {
-    console.log('short course')
-}
-let course4 = coursesAndDurationArray[3];
-console.log(course4);
-if(course4 > 5){
-    console.log('super');
-}else {
-    console.log('short course')
-}
-let course5 = coursesAndDurationArray[4];
-console.log(course5);
-if(course4 => 5){
-    console.log('super');
-}else {
-    console.log('short course')
-}
-let course6 = coursesAndDurationArray[6];
-console.log(course6);
-if(course6 > 5){
-    console.log('super');
-}else {
-    console.log('short course')
-}
+
