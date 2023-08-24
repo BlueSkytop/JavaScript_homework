@@ -56,15 +56,6 @@ while (i<greetings.length){
     i++;
 }
 
-//- Використовуючи данні з масиву, за допомоги document.write та циклу
-//побудувати структуру по шаблону
-//let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
-//<ul>
-  //  <li>html</li>
-//
-//</ul>
-
-
 
 //Використовуючи данні з масиву, за допомоги document.write та циклу
 //побудувати структуру по шаблону
@@ -128,3 +119,11 @@ for(let user of users){
     }
 }
 
+//- Використовуючи данні з масиву, за допомоги document.write та циклу
+//побудувати структуру по шаблону
+let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+for (let j = 0; j < listOfItems.length; j++) {
+    const listOfItem = listOfItems[j];
+    document.write(`<ul> <li>${listOfItem}</li>
+</ul>`)
+}
