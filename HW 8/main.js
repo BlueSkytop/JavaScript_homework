@@ -177,3 +177,44 @@ car2.info();
 //Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 //    За допомоги циклу знайти яка попелюшка повинна бути з принцом.
 //    Додатково, знайти необхідну попелюшку за допомоги функції масиву find та відповідного колбеку
+class Human{
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+class Popelushka extends Human{
+    constructor(name, age, footSize) {
+        super(name, age);
+        this.footSize = footSize;
+    }
+}
+
+class Prince extends Human{
+    constructor(name, age, bootSize) {
+        super(name, age);
+        this.bootSize = bootSize;
+    }
+    findPrincess(arr) {
+        for(const Popelushka of arr){
+           if  (Popelushka.footSize === this.bootSize) {
+               return Popelushka;
+           }
+        }
+    }
+}
+let popelArr = [
+    new Popelushka ('Olya', 25 , 38 ),
+    new Popelushka ('Lesya', 26 , 39 ),
+    new Popelushka ('Katya', 24 , 37 ),
+    new Popelushka ('Ira', 28 , 35 ),
+    new Popelushka ('Lyuba',32  , 38 ),
+    new Popelushka ('Eva',30  , 38 ),
+    new Popelushka ('Oksana', 22 , 37.5 ),
+    new Popelushka ('Orusya', 23 , 38.5 ),
+    new Popelushka ('Adelya', 29 , 39 ),
+    new Popelushka ('Tanya', 31 , 40 ),
+];
+let prince = new Prince('Sergey', 30, 46);
+console.log(prince.findPrincess(popelArr));
