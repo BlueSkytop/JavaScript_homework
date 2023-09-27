@@ -9,11 +9,11 @@
   const json = localStorage.getItem('sessions');
   const sessions = json ? JSON.parse(json) : [];
 
-  for (const  session of sessions) {
-    const wrapper = document.createElement('div');
-    wrapper.innerText = session.date;
-    document.body.appendChild(wrapper)
-  }
+  sessions.push({
+    date: new Date(),
+  });
+
+localStorage.setItem('sessions', JSON.stringify(sessions));
 </script>
 </body>
 </html>
