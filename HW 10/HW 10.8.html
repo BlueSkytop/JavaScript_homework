@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="count">100грн</div>
+
+<script>
+    let count = +localStorage.getItem('count') || 100;
+    const lastRefreshTime = localStorage.getItem('lastRefresh');
+
+const countDiv = document.getElementById('count');
+const currentTime = new Date().getTime();
+    if (currentTime - lastRefreshTime > 100) {
+        count += 10;
+        localStorage.setItem('count', count.toString());
+    }
+    countDiv.innerText = `${count}грн`
+    localStorage.setItem('lastRefresh', currentTime.toString());
+</script>
+</body>
+</html>
