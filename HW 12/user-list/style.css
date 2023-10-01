@@ -1,0 +1,19 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: #040449;
+}
+.line:before, .line:after{
+    display: block;
+    content: '';
+    background-color: #afa270;
+    height: 1px;
+}
+wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
