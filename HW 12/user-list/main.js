@@ -1,5 +1,5 @@
 const foo = async () => {
-    const  res = await fetch('http://jsonplaceholder.typicode.com/users');
+    const  res = await fetch('http://jsonplaceholder.typicode.com/users/');
     const users = await  res.json();
     const wrapper = document.getElementById('wrap');
 
@@ -12,7 +12,7 @@ const foo = async () => {
         wrapper.appendChild(div);
 
         button.onclick = () => {
-            location.href = `.../user-info/index.html?userId=${user.id}`;
+            location.href = `../user-info/index.html?userId=${user.id}`;
         }
     }
 }
